@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html >
+<head lang="en">
+ <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/> 
+    <title>Final_homework_CV</title> 
+    <link rel="stylesheet" href="./index.css" type="text/css"> 
+</head>
+
+<body onkeydown="move(event)">
+
+<!--开始界面按钮的设置-->
+<div class="start">
+
+<div id="second">time：<span id="secondSpan">20</span>S</div>
+<div id="score" >times_left：<span id="scoreSpan">6</span></div>
+</div>
+
+<!--背景内容-->
+<div id="content">
+    <div class="BG">
+        <canvas id="bg_img_canvas"> </canvas>
+    </div>
+    <div class="sun">
+        <span style="--i:1"></span>
+        <span style="--i:2"></span>
+        <span style="--i:3"></span>
+        <span style="--i:4"></span>
+        <span style="--i:5"></span>
+        <span style="--i:6"></span>
+        <span style="--i:7"></span>
+        <span style="--i:8"></span>
+    </div >
+    <div class="could_wind" style="--ii:1">
+<!--云-->
+        <div class="cloud a">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="cloud b">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="cloud c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="cloud d">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+<!--风-->
+        <div class="wind a">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind b">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind d">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind e">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind_mini">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="could_wind" style="--ii:2">
+        <!--云-->
+        <div class="cloud a">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="cloud b">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="cloud c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="cloud d">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="cloud_marx ">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <!--风-->
+        <div class="wind a">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind b">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind c">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind d">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind e">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="wind_mini">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
+
+    <!--  /*创建主角*/-->
+    <canvas id="myCanvas"  style="position:absolute;">检查浏览器的版本，它需要能够支持canvas功能</canvas>
+    <div id="pandasaying"><p>键盘按钮A/a D/d W/w S/s 分别控制左右上下方向</p></div>
+    <canvas id="ball" style="position:absolute;"></canvas>
+
+
+</div>
+
+<!--背景音乐-->
+<audio src="./BGM/nohidea.%20-%20butterflies.mp3" id="BGM" controls="true" autoplay="true" loop="loop">
+</audio>
+</body>
+<script type="text/javascript" src="./index.js"></script>
+</html>
